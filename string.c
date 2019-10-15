@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <wchar.h>
 
-size_t w_strlen(const wchar_t *s){
+size_t my_strlen(const wchar_t *s){
 
    const wchar_t *p = s;
    while (*p)
@@ -9,7 +9,7 @@ size_t w_strlen(const wchar_t *s){
    return (p-s);
 }
 
-int my_strlen(const char *s)
+size_t my_strlen(const char *s)
 {
    char *p = s;
 
@@ -19,7 +19,7 @@ int my_strlen(const char *s)
    return (p - s);
 }
 
-size_t main(void)
+int main(void)
 {
    int i;
    char *s[] = 
